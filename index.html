@@ -70,7 +70,7 @@
         background-color: #4a0808;
         background-image: url(&quot;assets/splash-bg.jpg&quot;);
         background-size: cover;
-        background-position: center 20%;
+        background-position: 30% 20%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -97,7 +97,7 @@
           text-align: center;
           padding: 2.5rem 2rem 2rem;
           margin-top: -10vh;
-          background: rgba(255, 248, 240, 0.12);
+          background: rgba(255, 248, 240, 0.28);
           border-radius: 20px;
           border: 1px solid rgba(180, 100, 30, 0.18);
           box-shadow: 0 8px 32px rgba(80, 20, 0, 0.08);
@@ -116,16 +116,65 @@
         >
           ॥ श्री गणेशाय नमः ॥
         </p>
-        <div style="margin-bottom: 0.5rem; display:flex; flex-direction:column; align-items:center; gap:0.4rem;">
-          <p style="font-family:&quot;Playfair Display&quot;,serif;font-style:italic;color:#5a1200;font-size:clamp(2.4rem,11vw,5rem);font-weight:700;line-height:1;text-shadow:0 2px 6px rgba(0,0,0,.12);margin:0;">Pragya</p>
-          <p style="font-family:&quot;Cinzel&quot;,serif;color:#8B4000;font-size:clamp(1.1rem,5vw,1.8rem);font-weight:700;line-height:1;margin:0;">&#x26;</p>
-          <p style="font-family:&quot;Playfair Display&quot;,serif;font-style:italic;color:#5a1200;font-size:clamp(2.4rem,11vw,5rem);font-weight:700;line-height:1;text-shadow:0 2px 6px rgba(0,0,0,.12);margin:0;">Mohit</p>
+        <div
+          style="
+            margin-bottom: 1.4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.4rem;
+          "
+        >
+          <p
+            style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-style: italic;
+              color: #5a1200;
+              font-size: clamp(2.4rem, 11vw, 5rem);
+              font-weight: 700;
+              line-height: 1;
+              text-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+              margin: 0;
+            "
+          >
+            Pragya
+          </p>
+          <p
+            style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-style: italic;
+              color: #5a1200;
+              font-size: clamp(2.4rem, 9vw, 4rem);
+              font-weight: 500;
+              line-height: 1;
+              text-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+              margin: 0;
+            "
+          >
+            &#x26;
+          </p>
+          <!-- <p style="font-family:&quot;Cinzel&quot;,serif;color:#8B4000;font-size:clamp(1.1rem,5vw,1.8rem);font-weight:700;line-height:1;margin:0;">&#x26;</p> -->
+          <p
+            style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-style: italic;
+              color: #5a1200;
+              font-size: clamp(2.4rem, 11vw, 5rem);
+              font-weight: 700;
+              line-height: 1;
+              text-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+              margin: 0;
+            "
+          >
+            Mohit
+          </p>
         </div>
         <p
           style="
             font-family: &quot;Cinzel&quot;, serif;
             color: #9a5010;
-            font-size: clamp(0.65rem, 1.8vw, 0.82rem);
+            font-size: clamp(1.1rem, 4.5vw, 1.3rem);
+            font-weight: 700;
             letter-spacing: 0.28em;
             margin-bottom: 0.5rem;
           "
@@ -143,6 +192,19 @@
           "
         >
           20–21 June 2026
+        </p>
+        <p
+          style="
+            font-family: &quot;Cormorant Garamond&quot;, serif;
+            color: #7a3a10;
+            font-size: clamp(1rem, 4.5vw, 1.3rem);
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.8rem;
+            margin-top: -1rem;
+          "
+        >
+          Shagun Farms, Raipur
         </p>
         <div
           style="
@@ -191,7 +253,6 @@
             0 4px 28px rgba(0, 0, 0, 0.5);
         }
       }
-
     </style>
 
     <audio id="bg-audio" loop preload="none">
@@ -330,12 +391,12 @@
           if (!splash) return;
           splash.style.transition = "opacity 0.9s ease";
           splash.style.opacity = "0";
-          setTimeout(() => { window.location.href = "invite.html"; }, 900);
+          setTimeout(() => {
+            window.location.href = "invite.html";
+          }, 900);
         },
         { once: true },
       );
     </script>
-
-   
   </body>
 </html>
