@@ -663,7 +663,7 @@ function initHeroEntrance() {
    13. COUNTDOWN
    ══════════════════════════════════════════════════════════ */
 function initCountdown() {
-  const tgt = new Date('2026-06-23T12:30:00+05:30').getTime();
+  const tgt = new Date('2026-06-21T12:30:00+05:30').getTime();
   const pad = n => String(n).padStart(2, '0');
   const els = {
     d: document.getElementById('cd-d'),
